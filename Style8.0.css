@@ -1,0 +1,33 @@
+body {
+    background-image: url(https://t4.ftcdn.net/jpg/05/63/33/61/360_F_563336147_hA4lHIVJ9iCpib4eswsFXqAc0s3UAdPT.jpg);
+}
+.div1{
+    background-color: rgb(39, 56, 9);
+    text-align: center;
+    color: bisque;
+    border: 20 px;
+    border-style: inset;
+    border-color:rgb(63, 167, 18) ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    
+   
+}
+.div2{
+    background-color: rgb(39, 56, 9);
+    text-align: center;
+    color: rgb(34, 192, 216);
+    border: 1cm;
+    border-style: inset;
+    border-color:rgb(62, 205, 37) ;
+    font-family: Impact;
+    font-size: medium;
+
+ 
+}
+.foto1{
+    border: 2cm;
+    border-color: rgb(47, 213, 25);
+    border-style: ridge;
+    
+}
