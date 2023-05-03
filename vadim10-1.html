@@ -2,14 +2,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style10.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
  <style>
     .container{
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
     grid-template-rows: 100px 200px 300px;
    height: 100vh;
-   justify-content: center;
     align-content: center;
     grid-gap: 3px;
     grid-auto-rows: minmax(50px auto);
@@ -38,7 +37,6 @@
 
     @media all and (max-width:500px) {
     .container{
-        justify-content: end;
         grid-gap: 3px;
         grid-template-columns: repeat(1, 260px);
         grid-template-areas: 
@@ -52,13 +50,14 @@
     grid-template-columns: repeat(auto-fit minmax(100px auto) );
     width: 100%;
     }
-    
+   
 }
 
 .item{
     padding: 40px;
     font-size: 25px;
     border: 1px solid black;
+    
     
     
 
@@ -98,10 +97,11 @@
 }
 
  </style>
-    <title>Document</title>
+    <title>10 laba</title>
 </head>
 <body>
-    <div   class="container" id = "grid" >
+    <div   class="container" id = "grid">
+       
         <div class="item item_1"> 1  </div>
         <div class="item item_2"> 2 </div>
         <div class="item item_3"> 3 </div>

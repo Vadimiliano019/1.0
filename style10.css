@@ -8,6 +8,7 @@
     justify-content: center;
     align-content: center;
     grid-auto-rows: minmax(50px auto);
+    
 
 
 }
@@ -22,8 +23,6 @@
 .item_1{
     flex-grow: 4;
   
-
-
 }
 .item_2{
     
