@@ -64,15 +64,15 @@ a{
 
 }
 A:link{ 
-    color: green; 
+    color: rgb(0, 55, 255); 
     text-decoration:none;
     }
     A:active { 
-    color: #0000FF; 
+    color: #000000; 
     text-decoration:none; 
     }
     A:visited {
-    color: DarkBlue; 
+    color: rgb(25, 0, 255); 
     text-decoration:none;
     }
     A:hover { 

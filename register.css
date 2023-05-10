@@ -1,0 +1,91 @@
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightskyblue;
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+
+}
+ul li::marker {
+    color: rgb(0, 0, 0);
+    font-size: 0;
+}
+
+.menu li a:hover {
+    background-color: #111;
+}
+.menu h1 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu h2 {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+h3 {
+    padding: 0 0;
+    margin: 0 0;
+    font-family: "Gill Sans", sans-serif;
+}
+.Myform{
+    width:400px; /* ширина блока */
+    height: auto; /* высота блока */
+    background: #fff; /* фон блока */
+    margin: 30px auto;  /* отступ сверху и выравнивание по середине */
+    border: 2px solid black;
+}
+.Myform h1 {
+    margin: 0; /* убираем отступы */
+    background-color: lightskyblue; /* фон заголовка */
+    color: #fff; /* цвет текста */
+    font-size: 14px; /* размер шрифта */
+    padding: 20px; /* отступы */
+    text-align: center; /* выравниваем текст по центру */
+    text-transform: uppercase; /* все символы заглавные */
+}
+.inp{
+    padding:20px; /* отступы */
+}
+.text{
+    margin: 10px;
+    border: 1px solid #dcdcdc; /* рамка */
+    padding: 12px 10px; /* отступы текста */
+    width: 350px; /* ширина */
+}
+.btn{
+    float: right; /* выравнивание справа */
+    font-weight: bold; /* жирный текст */
+    margin: 10px 10px 10px 10px ; /* отступы */
+    padding: 12px 20px; /* оступы для текста */
+}
+body {
+    margin: 0;
+}
+footer{
+    background-color: black;
+    height: 100px;
+}
+p{
+    margin: 32px auto;
+    text-align: center;
+    
+}
