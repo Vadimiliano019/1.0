@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #41a3f4;
+    display: block;
+    border-bottom: 2px solid #606060;
+    box-shadow: 0 1px 0 red;
+    font-family: Calibri, serif;
+    width: 100%;
+    height: 9vh;
+}
+.name {
+    display: block;
+    margin-left: 2vw;
+    float: left;
+}
+.main_name{
+    font-size: 4.3vh;
+}
+.my_name{
+    font-size: 2.5vh;
+    color: white;
+    margin-left: 2vw;
+}
+.menu{
+    display: flex;
+    font-size: 2.5vh;
+    float: right;
+    font-weight: 600;
+    margin-top: 2.8vh;
+}
+.login{
+    padding: 2.8vh 1vw 3.2vh 1vw;
+}
+.login:hover, .register:hover{
+    background-color: #2791f3;
+    box-shadow: 0 0 2px black;
+}
+.register{
+    padding: 2.8vh 1.5vw 3.2vh 1vw;
+}
+.silca{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    display: flex;
+}
+.divs{
+    margin: 2vh 2vw auto 4vw;
+    width: 18vw;
+}
+.divs p{
+    font-size: 2vh;
+    margin-top: 1vh;
+    text-align: justify;
+    color: #606060;
+}
+.first_name{
+    font-size: 3.2vh;
+    color: #64aaca;
+}
+.second_name{
+    font-size: 3.2vh;
+    color: #48819f;
+    margin-top: 2vh;
+}
+.third_name{
+    font-size: 3.2vh;
+    color: #8cc33a;
+}
+.four_name{
+    font-size: 3.2vh;
+    color: #6d9d2e;
+}
+.five_name{
+    font-size: 3.2vh;
+    color: #ec602d;
+}
+.six_name{
+    font-size: 3.2vh;
+    color: #b54219;
+    margin-top: 2vh;
+}
+.back{
+    padding-top: 3vh;
+}
+.back a{
+    color: #4e81b3;
+}
+
+footer{
+    background-color: #263137;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 9vh;
+    text-align: center;
+}
+.prava{
+    color: #a9a9a9;
+    margin-top: 2.5vh;
+    font-size: 2vh;
+}

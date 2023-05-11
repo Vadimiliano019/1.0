@@ -1,56 +1,108 @@
-<html lang="UA">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Registration</title>
     <meta charset="UTF-8">
-    <link href="register.css" rel="stylesheet">
+    <title>Git_commands</title>
+    <link rel="stylesheet" href="git_commands.css">
 </head>
 <body>
-<nav class="menu">
-    <ul>
-        <li class="left"><h1>Мій особистий блог</h1>
-            <h2>Vadim Voronianskiy</h2></li>
-        <li class="right"><a href="#"><h3>Вхід</h3></a></li>
-        <li class="right"><a href="10labatest.html"><h3>Реєстрація</h3></a></li>
-    </ul>
-</nav>
-<table border="1"cellpadding="10" cellspacing="0" align="center" width="75%">
-
-<th align="center" colspan="0">Create a Reprository</th>
-
- 
-    <tr cellpadding="10">
-       <td align="center">101-TK</td>
-       <td align="center">101-TK</td>
-       <td align="center">101-TK</td>
-       <td align="center">101-TK</td>
-       <td align="center">101-TK</td>
-   </tr>
-   <tr cellpadding="10">
-       <td align="center">102-TK</td>
-       <td align="center">102-TK</td>
-       <td align="center">102-TK</td>
-       <td align="center">102-TK</td>
-       <td align="center">102-TK</td>
-   </tr>
-   <tr cellpadding="10">
-       <td align="center">103-TK</td>
-       <td align="center">103-TK</td>
-       <td align="center">103-TK</td>
-       <td align="center">103-TK</td>
-       <td align="center">103-TK</td>
-
-   </tr>
-    <tr cellpadding="10">
-       <td align="center">104-TK</td>
-       <td align="center">104-TK</td>
-       <td align="center">104-TK</td>
-       <td align="center">104-TK</td>
-       <td align="center">104-TK</td>
-    </tr>
-</table>
+<header>
+    <div class="name">
+        <h1 class="main_name">Мій особистий блог</h1>
+        <h2 class="my_name">Вадим Воронянський</h2>
+    </div>
+    <div class="menu">
+        <a href="#" class="silca">
+                <span class="login">
+                    Вхід
+                </span>
+        </a>
+        <a href="#" class="silca">
+                <span class="register">
+                    Реєстрація
+                </span>
+        </a>
+    </div>
+</header>
+<main>
+    <div class="divs">
+        <h1 class="first_name">Create a Repository</h1>
+            <p>From scratch-Create a new local repository</p>
+            <b>$ git init [project name]</b>
+            <p>Download from an existing repository</p>
+            <b>$ git clone my_url</b>
+        <h1 class="second_name">Observe your Repository</h1>
+            <p>List new or modified files not yet committed</p>
+            <b>$ git status</b>
+            <p>Show the changes to files not yet staged</p>
+            <b>$ git diff</b>
+            <p>Show the changes to staged files</p>
+            <b>$ git diff --cached</b>
+            <p>Show all staged and unstaged file changes</p>
+            <b>$ git diff HEAD</b>
+            <p>Show the changes between two commitids</p>
+            <b>$ git diff commit1 commit2</b>
+            <p>List the change dates and authors for a file</p>
+            <b>$ git blame [file]</b>
+            <p>Show the file changes for a commit id and/or fie</p>
+            <b>$ git show [commit]:[file]</b>
+            <p>Show full change history</p>
+            <b>$ git log</b>
+            <p>Show change history for fle/directory including diffs</p>
+            <b>$ git log -p (file/directory]</b>
+    </div>
+    <div class="divs">
+        <h1 class="third_name">Working with Branches</h1>
+            <p>List all local branches</p>
+            <b>$ git branch</b>
+            <p>List all branches, local and remote</p>
+            <b>$ git branch -av</b>
+            <p>Switch to a branch, my branch, and update working directory</p>
+            <b>$ git checkout my branch</b>
+            <p>Create a new branch called new branch</p>
+            <b>$ git branch new branch</b>
+            <p>Delete the branch called my branch</p>
+            <b>$ git branch -d my branch</b>
+            <p>Merge branch, a into branch b</p>
+            <b>$ git checkout branch b <br>$ git merge branch_a</b>
+            <p>Tag the current commit</p>
+            <b>$ git tag my tag</b>
+    </div>
+    <div class="divs">
+        <h1 class="four_name">Make a change</h1>
+            <p>Stages the file, ready for commit</p>
+            <b>$ git add [file]</b>
+            <p>Stage all changed files, ready for commit</p>
+            <b>$ git add</b>
+            <p>Commit all staged files to versioned history</p>
+            <b>$ git commit - "commit message"</b>
+            <p>Commit all your tracked files to versioned history</p>
+            <b>$ git commit -an "commit message"</b>
+            <p>Unstages file, keeping the file changes</p>
+            <b>$ git reset [file]</b>
+            <p>Revert everything to the last commit</p>
+            <b>$ git reset-hard</b>
+    </div>
+    <div class="divs">
+        <h1 class="five_name">Synchronize</h1>
+            <p>Get the latest changes from origin (no merge)</p>
+            <b>$ git fetch</b>
+            <p>Fetch the latest changes from origin and merge</p>
+            <b>$ git pull</b>
+            <p>Fetch the latest changes from origin and rebase</p>
+            <b>$ git pull rebase></b>
+            <p>Push local changes to the origin</p>
+            <b>$ git push</b>
+        <h1 class="six_name">Finally!</h1>
+            <p>When in doubt, use git help</p>
+            <b>$ git command --help</b>
+            <p class="back">Or visit <a href="https://training.github.com/">https://training.github.com/</a> for official GitHub training</p>
+    </div>
+</main>
 <footer>
-    <div>
-    <p><font color="white">Всі права захищенні </font> </P>
+    <div class="prava">
+        <p>© Всі права захищені</p>
+        <p>Розробник: студент групи 101-ТК Вадим Воронянський</p>
     </div>
 </footer>
 </body>

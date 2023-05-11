@@ -1,0 +1,62 @@
+.container{
+    display: grid;
+    
+   
+}
+
+.row{
+    
+}
+.item{
+    border: 1px;
+    border-style: solid ;
+    border-color: black;
+    height: 70px;
+    
+    text-align: center;
+}
+ .item2{
+    border: 1px;
+    border-style: solid ;
+    border-color: black;
+    height: 200px;
+    
+    text-align: center;
+
+ }
+ @media (min-width: 1200px) { 
+    .i_1{
+        background-color: yellow;
+    }
+    .i_7{
+        background-color: yellow;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199px) { 
+.i_2{
+    background-color: salmon;
+}
+.i_4{
+    background-color: salmon;
+}
+.i_6{
+    background-color: salmon;
+}
+   }
+   @media (min-width: 768px) and (max-width: 991px) { 
+    .i_3{
+        background-color: rgb(250, 114, 234);
+    }
+    .i_5{
+        background-color: rgb(250, 114, 223);
+    }
+    
+       }
+       @media all and (max-width: 767px) { 
+        .item{
+            color: aquamarine;
+        }
+        
+           }
+
+
