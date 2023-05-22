@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+}
+.blue{
+    background-color: var(--blue);
+    width: 100%;
+    height: 200px;
+}
+.grey{
+    width: 20%;
+    height: 700px;
+    background-color:var(--grey);
+}
+.blues{
+    width: 50%;
+    height: 200px;
+    background-color: var(--blues);
+}
+.red{
+    width: 50%;
+    height: 200px;
+    background-color:var(--red);
+}
+.yellow{
+    height: 500px;
+    width: 30%;
+    background-color: var(--yellow);
+}
+.green{
+    width: 100%;
+    height: 300px;
+    background-color: var(--green);
+}
+.brown{
+    width: 100%;
+    height: 290px;
+    background-color: var(--brown);
+}
+:root{
+    --blue: rgb(0, 247, 255);
+    --red: rgb(221, 241, 0);
+    --yellow: rgb(33, 248, 0);
+    --green: rgb(245, 82, 0);
+    --blues: rgb(98, 193, 234);
+    --grey: rgb(0, 0, 0);
+    --brown: rgba(165, 142, 42, 0.588);
+    }
+    @media (min-width: 576px) {
+        .flex-red{
+    display: flex;
+        }
+    }
+    @media (max-width: 576px) {
+        .blues{
+    width: 100%;
+    height: 200px;
+        }
+        .red{
+    width: 100%;
+    height: 200px;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .flex-yellow{
+            display: flex;
+        }
+    }
+    @media (max-width: 768px){
+    .yellow{
+        width: 100%;
+        height: 200px;
+    }
+    }
+    @media (max-width: 992px){
+        .grey{
+            width: 100%;
+            height: 200px;
+        }
+    }
+    @media (min-width: 992px) {
+        .flex-grey{
+    display: flex;
+        }
+    
+    }
+    @media (min-width: 1200px) {
+    
+    }

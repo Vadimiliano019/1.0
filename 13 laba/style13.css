@@ -1,0 +1,223 @@
+
+body{
+    background-color: #04313d;
+    
+}
+@media all and (max-width: 500px){
+    .container{
+        display: grid;
+        gap: 3px;
+        float: left;
+        width: 97vw;
+        height: 98vh;
+        margin: 0;
+        grid-template-areas:
+        "A"
+        "B"
+        "C"
+        "D"
+        "E"
+        "F"
+        "G";
+        grid-template-rows: 8% 20% 14% 14% 14% 8% 20%;
+        grid-template-columns: 98%;
+    }
+   
+    .item1{
+        font-size: 9vw;
+        padding-top: -1vh;
+    }
+    .item6{
+        font-size: 5vw;
+        padding: 1vh;
+    }
+    .item7{
+        font-size: 3vw;
+        padding: 1vh;
+    }
+}
+@media all and (min-width: 500px){
+    .container{
+        display: grid;
+        gap: 3px;
+        float: left;
+        width: 98vw;
+        height: 98vh;
+        margin: 0;
+        grid-template-areas:
+        "A   A"
+        "C   D"
+        "B   E"
+        "F   F"
+        "G   G";
+        grid-template-rows: 15% 20% 32% 15% 15%;
+        grid-template-columns: 49% 49%;
+    }
+   
+    .item1{
+        font-size: 7vw;
+        padding-top: 4vh;
+    }
+    .item6{
+        font-size: 5vw;
+        padding: 5.5vh;
+    }
+    .item7{
+        font-size: 2vw;
+        padding: 1.5vh 2.5vh;
+    }
+}
+@media all and (min-width: 750px){
+    .container{
+        display: grid;
+        gap: 3px;
+        float: left;
+        width: 98vw;
+        height: 98vh;
+        margin: 0;
+        grid-template-areas:
+        "A   A   B"
+        "C   D   B"
+        "F   F   B"
+        "E   E   E"
+        "G   G   G";
+        grid-template-rows: 20% 15% 20% 28% 15%;
+        grid-template-columns: 32% 32% 32%;
+    }
+    
+    .item1{
+        font-size: 6vw;
+        padding-top: 5vh;
+    }
+    .item6{
+        font-size: 4vw;
+        padding: 3vh 4vw;
+    }
+    .item7{
+        font-size: 1.8vw;
+        padding: 1.5vh 4vh;
+    }
+}
+@media all and (min-width: 950px){
+    .container{
+        display: grid;
+        gap: 3px;
+        float: left;
+        width: 98vw;
+        height: 98vh;
+        margin: 0;
+        grid-template-areas:
+        "A   A   A   B"
+        "C   D   E   B"
+        "F   F   E   B"
+        "G   G   G   G";
+        grid-template-rows: 29% 20% 29% 20%;
+        grid-template-columns: 23% 23% 31% 23%;
+    }
+   
+    .item1{
+        font-size: 7vw;
+        padding-top: 7vh;
+    }
+    .item6{
+        font-size: 4vw;
+        padding: 5.5vh;
+    }
+    .item7{
+        font-size: 2vw;
+        padding: 1.5vh 4vh;
+    }
+}
+@media all and (min-width: 1200px){
+    .container {
+        display: grid;
+        gap: 3px;
+        float: left;
+        width: 98vw;
+        height: 98vh;
+        margin: 0;
+        grid-template-areas:
+        "A   A   A   B"
+        "C   D   E   B"
+        "F   F   E   B"
+        "G   G   G   G";
+        grid-template-rows: 29% 20% 29% 20%;
+        grid-template-columns: 23% 23% 31% 23%;
+    }
+
+    
+    .item1{
+        font-size: 6vw;
+        padding-top: 7vh;
+    }
+    .item6{
+        font-size: 3vw;
+        padding: 5.5vh;
+    }
+    .item7{
+        font-size: 1.8vw;
+        padding: 1.5vh 4vh;
+    }
+}
+.item1{
+    background-color: #7dd45b;
+    border: 1px solid lightgray;
+    grid-area: A;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 7px 3px 10px yellow;
+    color: blue;
+}
+.regis{
+    font-size: 5vh;
+    position: absolute;
+    top: 3vh;
+    left: 3vw;
+}
+.regis1{
+    font-size: 5vh;
+    position: absolute;
+    top: 9vh;
+    left: 3vw;
+}
+.item2{
+    background-color: #04313d;
+    border: 1px solid lightgray;
+    grid-area: B;
+    padding: 4vh 2vh;
+    vertical-align: middle;
+    text-align: center;
+}
+.item3{
+    background-color: #d0b35b;
+    border: 1px solid lightgray;
+    grid-area: C;
+    padding: 1vh;
+    text-align: center;
+}
+.item4{
+    background-color: #cc6be0;
+    grid-area: D;
+    padding: 1vh;
+    text-align: center;
+}
+.item5{
+    background-color: rgb(17, 24, 7);
+    border: 1px solid lightgray;
+    grid-area: E;
+    padding: 4vh 1vh;
+    text-align: center;
+}
+.item6{
+    background-color: #c9e11a;
+    border: 1px solid lightgray;
+    grid-area: F;
+    text-align: center;
+}
+.item7{
+    background-color: #c41111;
+    border: 1px solid lightgray;
+    grid-area: G;
+    text-align: justify;
+    text-indent: 5vw;
+}

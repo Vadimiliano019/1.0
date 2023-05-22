@@ -28,7 +28,7 @@ ul li::marker {
 }
 
 .menu li a:hover {
-    background-color: #111;
+    background-color: #ff0000;
 }
 .menu h1 {
     margin: 0;
@@ -67,7 +67,7 @@ h3 {
 }
 .text{
     margin: 10px;
-    border: 1px solid #dcdcdc; /* рамка */
+    border: 1px solid #ff0000; /* рамка */
     padding: 12px 10px; /* отступы текста */
     width: 350px; /* ширина */
 }
