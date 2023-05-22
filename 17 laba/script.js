@@ -1,0 +1,26 @@
+function getCurrentTime() 
+{
+    const now = new Date();
+  
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+  
+    const daysOfWeek = ['неділя', 'понеділок', 'вівторок', 'середа', 'четвер', 'пятниця', 'субота'];
+    const dayOfWeek = daysOfWeek[now.getDay()];
+  
+    const months = ['січня', 'лютого', 'березня', 'квітня', 'травня', 'червня', 'липня', 'серпня', 'вересня', 'жовтня', 'листопада', 'грудня'];
+    const month = months[now.getMonth()];
+  
+    const day = now.getDate();
+    const year = now.getFullYear();
+  
+    const currentTime = `${hours}:${minutes}:${seconds}`;
+    const currentDate = `${dayOfWeek}, ${day} ${month} ${year} року`;
+  
+    console.log(currentTime + ', ' + currentDate);
+    return currentTime;
+  }
+  
+  // Виклик функції для отримання та виведення поточного часу
+  getCurrentTime();
