@@ -1,3 +1,4 @@
+'use strict'
 function getCurrentTime() 
 {
     const now = new Date();

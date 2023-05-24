@@ -1,7 +1,8 @@
+'use strict'
 function guessNumberGame() {
     var attempts = 0;
     var randomNumber = Math.floor(Math.random() * 101); 
-
+    console.log(Math.random());
     while (true) {
         var userGuess = prompt("Спробуйте вгадати число від 0 до 100:");
 
@@ -20,6 +21,7 @@ function guessNumberGame() {
 
         if (guess < 0 || guess > 100) {
             alert("Введіть число від 0 до 100.");
+            
             continue;
         }
 
@@ -28,6 +30,7 @@ function guessNumberGame() {
             alert(message);
             console.log(getCurrentDateTime() + " " + message);
             break;
+            
         } else {
             var message = getGuessMessage(guess, randomNumber);
             alert(message);

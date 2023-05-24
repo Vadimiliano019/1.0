@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Перевірка кількості символів в полі введення</title>
+  <style>
+    .valid {
+      border: 2px solid green;
+    }
+    
+    .invalid {
+      border: 2px solid red;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" data-length="1" onblur="checkInput(this)">
+  <input type="text" data-length="2" onblur="checkInput(this)">
+  <input type="text" data-length="3" onblur="checkInput(this)">
+
+  <script>
+    function checkInput(input) {
+      var length = input.getAttribute("data-length");
+      var value = input.value;
+
+      if (value.length == length) {
+        input.classList.remove("invalid");
+        input.classList.add("valid");
+      } else {
+        input.classList.remove("valid");
+        input.classList.add("invalid");
+      }
+    }
+  </script>
+</body>
+</html>
