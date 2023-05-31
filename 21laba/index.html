@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX Web Application</title>
+</head>
+<body>
+<h1>Квадрат числа</h1>
+<input type="number" id="numberInput" placeholder="Введіть число">
+<button onclick="calculateSquare()">Обчислити</button>
+<p id="result"></p>
+
+<script>
+  function calculateSquare() {
+    var number = document.getElementById('numberInput').value;
+    var xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        var result = JSON.parse(xhr.responseText);
+        document.getElementById('result').innerText = "Квадрат числа: " + result.square;
+      }
+    };
+
+    xhr.open('GET', '/calculate?number=' + number, true);
+    xhr.send();
+  }
+</script>
+</body>
+</html>

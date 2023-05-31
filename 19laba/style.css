@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #main-page {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  #game-page,
+  #congrats-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  #game-page.hidden,
+  #congrats-modal.hidden {
+    display: none;
+  }
+  
+  #game-page h2 {
+    margin-bottom: 20px;
+  }
+  
+  #categories {
+    margin-bottom: 20px;
+  }
+  
+  #categories button {
+    margin: 5px;
+  }
+  
+  #game-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #image-grid img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  #current-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #congrats-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #congrats-content h3 {
+    margin-top: 0;
+  }
+  
+  

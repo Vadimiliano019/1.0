@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гра</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="main-page">
+    <h1>Моя гра</h1>
+    <button id="start-button">Почати гру</button>
+  </div>
+
+  <div id="game-page" class="hidden">
+    <h2>Виберіть розділ:</h2>
+    <div id="categories">
+      <button class="category-button" data-category="animals">Тварини</button>
+      <button class="category-button" data-category="insects">Комахи</button>
+      <button class="category-button" data-category="fish">Риби</button>
+    </div>
+    <div id="game-area">
+      <div id="image-grid"></div>
+      <div id="current-image"></div>
+    </div>
+    <button id="restart-button">Почати з початку</button>
+  </div>
+
+  <div id="congrats-modal" class="hidden">
+    <div id="congrats-content">
+      <h3>Вітаємо!</h3>
+      <p>Ви успішно завершили гру!</p>
+      <button id="play-again-button">Грати ще раз</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

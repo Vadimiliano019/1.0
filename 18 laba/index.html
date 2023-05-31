@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Гра</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="start-page">
+    <h1>Гра</h1>
+    <button id="start-button">Почати гру</button>
+  </div>
+
+  <div id="game-page" style="display: none;">
+    <h2>time: <span id="timer">60</span> sec</h2>
+    <div id="game-board">
+     
+    </div>
+    <button id="restart-button">розпочати заново</button>
+  </div>
+
+  <div id="congrats-modal" style="display: none;">
+    <h2>Вітаємо!</h2>
+    <p>Ви успішно завершили гру.</p>
+    <button id="play-again-button">розпочати заново</button>
+  </div>
+
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>
